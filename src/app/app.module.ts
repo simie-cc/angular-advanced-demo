@@ -8,13 +8,15 @@ import { appRoutes } from './app.routing';
 import { AppComponent } from './app.component';
 import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.component';
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
+import { HttpGetComponent } from './http-get/http-get.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TemplateRefVarComponent,
-    NotfoundPageComponent
+    NotfoundPageComponent,
+    HttpGetComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+由 HttpModule 提供，通常直接由 Root Module (AppModule) import 一次即可
+目前最新的 CLI 產生範本預設就會引入了
+使用DI注入
+constructor(private http: Http) { }
+呼叫Http
+http.get(url) – GET，不傳送資料
+http.post(url, data) – POST，傳送資料，data可為任意物件，預設會轉為 JSON 送出
+目前直接提供的Method還有PUT、DELETE、PATCH
+不在這範圍內的Method就要透過request()函式，傳入組合好的Request
+可參考官方API文件
