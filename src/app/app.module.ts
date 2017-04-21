@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.component';
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
 import { HttpGetComponent } from './http-get/http-get.component';
+import { ParamRouteComponent } from './param-route/param-route.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HttpGetComponent } from './http-get/http-get.component';
     AppComponent,
     TemplateRefVarComponent,
     NotfoundPageComponent,
-    HttpGetComponent
+    HttpGetComponent,
+    ParamRouteComponent
   ],
   imports: [
     BrowserModule,

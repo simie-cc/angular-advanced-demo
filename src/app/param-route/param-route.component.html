@@ -1,0 +1,7 @@
+<div>User ID:
+    <input #userid type="text">
+    <button (click)='changeUrl(userid.value)'>GO</button>
+</div>
+
+<div>Display User ID: {{ user_id }}</div>
+<div>Route data: {{ data | json }}</div>
