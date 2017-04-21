@@ -1,3 +1,14 @@
 <h1>
   {{title}}
 </h1>
+
+<div class="menu">
+    |
+    <div *ngFor="let r of routes">
+        <span *ngIf="r.data">
+            <a [routerLink]="'/' + r.path">{{ r.data.label }}</a> |
+        </span>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
