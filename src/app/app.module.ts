@@ -10,6 +10,8 @@ import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.com
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
 import { HttpGetComponent } from './http-get/http-get.component';
 import { ParamRouteComponent } from './param-route/param-route.component';
+import { ProgrammableRouteComponent } from './programmable-route/programmable-route.component';
+import { ProgrammableRouteTargetComponent } from './programmable-route/programmable-route-target/programmable-route-target.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { ParamRouteComponent } from './param-route/param-route.component';
     TemplateRefVarComponent,
     NotfoundPageComponent,
     HttpGetComponent,
-    ParamRouteComponent
+    ParamRouteComponent,
+    ProgrammableRouteComponent,
+    ProgrammableRouteTargetComponent
   ],
   imports: [
     BrowserModule,
