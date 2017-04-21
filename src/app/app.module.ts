@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { appRoutes } from './app.routing';
+import { RouteGuardService } from './route-guard.service';
+
 import { AppComponent } from './app.component';
 import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.component';
 import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
@@ -12,6 +14,10 @@ import { HttpGetComponent } from './http-get/http-get.component';
 import { ParamRouteComponent } from './param-route/param-route.component';
 import { ProgrammableRouteComponent } from './programmable-route/programmable-route.component';
 import { ProgrammableRouteTargetComponent } from './programmable-route/programmable-route-target/programmable-route-target.component';
+import { RouteGuardComponent } from './route-guard/route-guard.component';
+import { GuardedPageComponent } from './guarded-page/guarded-page.component';
+import { Page1Component } from './guarded-page/page1/page1.component';
+import { Page2Component } from './guarded-page/page2/page2.component';
 
 
 @NgModule({
@@ -22,7 +28,11 @@ import { ProgrammableRouteTargetComponent } from './programmable-route/programma
     HttpGetComponent,
     ParamRouteComponent,
     ProgrammableRouteComponent,
-    ProgrammableRouteTargetComponent
+    ProgrammableRouteTargetComponent,
+    RouteGuardComponent,
+    GuardedPageComponent,
+    Page1Component,
+    Page2Component
   ],
   imports: [
     BrowserModule,
@@ -30,7 +40,9 @@ import { ProgrammableRouteTargetComponent } from './programmable-route/programma
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+      RouteGuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

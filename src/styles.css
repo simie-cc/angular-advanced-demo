@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-.menu > div {
+.menu div {
     display: inline-block;
 }
 
-.menu > div > span {
-    margin: 0 5px;
+.menu .link {
+    margin: 5px;
     padding: 2px;
     border: 1px solid gray;
     border-radius: 3px;

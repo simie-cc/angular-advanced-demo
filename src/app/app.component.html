@@ -4,9 +4,9 @@
 
 <div class="menu">
     <div *ngFor="let r of routes">
-        <span *ngIf="r.data">
+        <div class='link' *ngIf="r.data">
             <a [routerLink]="transPath(r.path)">{{ r.data.label }}</a>
-        </span>
+        </div>
     </div>
 </div>
 <hr>

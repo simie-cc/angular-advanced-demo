@@ -13,6 +13,6 @@ export class AppComponent {
     routes = appRoutes;
 
     transPath(path: string) {
-        return '/' + path.replace(/:\w+/, '') + '/';
+        return '/' + path;
     }
 }
