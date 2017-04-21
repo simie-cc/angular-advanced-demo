@@ -3,3 +3,10 @@
 .menu > div {
     display: inline-block;
 }
+
+.menu > div > span {
+    margin: 0 5px;
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}

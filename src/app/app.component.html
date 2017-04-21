@@ -3,12 +3,11 @@
 </h1>
 
 <div class="menu">
-    |
     <div *ngFor="let r of routes">
         <span *ngIf="r.data">
-            <a [routerLink]="'/' + r.path">{{ r.data.label }}</a> |
+            <a [routerLink]="'/' + r.path">{{ r.data.label }}</a>
         </span>
     </div>
 </div>
-
+<hr>
 <router-outlet></router-outlet>
