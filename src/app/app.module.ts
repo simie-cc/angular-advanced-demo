@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { appRoutes } from './app.routing';
 import { RouteGuardService } from './route-guard.service';
+import { LazyGuardService } from './lazy-guard.service';
 
 import { AppComponent } from './app.component';
 import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.component';
@@ -32,7 +33,7 @@ import { Page2Component } from './guarded-page/page2/page2.component';
     RouteGuardComponent,
     GuardedPageComponent,
     Page1Component,
-    Page2Component
+    Page2Component,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,8 @@ import { Page2Component } from './guarded-page/page2/page2.component';
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-      RouteGuardService
+      RouteGuardService,
+      LazyGuardService
   ],
   bootstrap: [AppComponent]
 })
