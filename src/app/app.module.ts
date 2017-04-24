@@ -20,7 +20,6 @@ import { GuardedPageComponent } from './guarded-page/guarded-page.component';
 import { Page1Component } from './guarded-page/page1/page1.component';
 import { Page2Component } from './guarded-page/page2/page2.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

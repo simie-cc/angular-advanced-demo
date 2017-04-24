@@ -35,5 +35,7 @@ export const appRoutes: Routes = [
     },
     { path: 'lazyload', loadChildren: './lazyload/lazyload.module#LazyloadModule', data: { label: 'Lazyload' },
       canLoad: [LazyGuardService] },
+    { path: 'templatedriven', loadChildren: './template-driven-forms/template-driven-forms.module#TemplateDrivenFormsModule',
+      data: { label: 'Template-driven Forms'} },
     { path: '**', component: NotfoundPageComponent }
 ];
